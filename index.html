@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Price Grid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+        
+    <style>
+        /* ### Primary
+        - Cyan: hsl(179, 62%, 43%)
+        - Bright Yellow: hsl(71, 73%, 54%)
+        ### Neutral
+        - Light Gray: hsl(204, 43%, 93%)
+        - Grayish Blue: hsl(218, 22%, 67%)
+        */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Karla', sans-serif;
+        }
+        body {
+            background-color: hsl(204, 43%, 93%);
+            
+        }
+        .bg-white {
+            background-color: white;
+        }
+        .bg-cyan {
+            background-color: hsl(179, 62%, 43%);
+        }
+        .bg-blue {
+            background-color: #4abebd;
+        }
+        .flex {
+            display: flex;
+        }
+        .relative {
+            position: relative;
+        }
+        .p-54 {
+            padding: 50px 40px;
+        }
+        .up-round {
+            border-radius: 5px 5px 0px 0px;
+        } 
+        .down-rounded {
+            border-radius: 0 0 5px 5px;
+            overflow: hidden;
+        }
+        .color-gray {
+            color: hsl(204, 43%, 93%);
+        }
+        
+        h1 {
+            margin-bottom: 25px;
+            color: hsl(204, 43%, 93%);
+        }
+        h2 {
+            margin-bottom: 15px;
+            color:  hsl(71, 73%, 54%);
+            font-size: 18px;
+        }
+        p {
+            color: hsl(218, 22%, 67%);
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: bold;
+        }
+        li {
+            list-style: none;
+            color: hsl(204, 43%, 93%);
+            font-size: 18px;
+        }
+        a {
+            background-color:  hsl(71, 73%, 54%);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 15px 100px;
+            border-radius: 8px;
+            box-shadow:  5px 5px 10px hsl(218, 22%, 67%);
+        }
+        .shadow {
+            box-shadow:  3px 3px 5px  lightgray;
+        }
+
+        @media only screen and (max-width: 795px) {
+            .sm\:column {
+                flex-direction: column;
+            } 
+            a{
+                padding: 15px auto;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container" class="shadow" style="width: 60%; margin: 0 auto; margin-top: 50px; margin-bottom: 20%;">
+        <div id="wrapper">
+            <div class="bg-white p-54 up-round">
+                <h1 style="color: hsl(179, 62%, 43%);">Join our community</h1>
+                <h2>30 days, hassle free money back guarantee</h2>
+                <p>Gain access to our full library of tutorials along with expert code reviews. Perfect for any developer who are serious about honing their skills</p>
+            </div>
+            <div class="flex down-rounded sm:column" style="width: 100%;">
+                <div class="p-54 bg-cyan" style="width: 100%;">
+                    <h1 style="font-size: 20px;" >Monthly Subscription</h1>
+                    <p class="color-gray" style="font-size: 30px;">$29 <span class="color-gray" style="font-size: 16px;">  per month</span> </p>
+                    <p class="color-gray" style="margin-bottom: 35px;">Full access for less than 1$ a day</p>
+                    <a href="#">Sign Up</a>
+                </div>
+                <div class="bg-blue p-54" style="width: 100%;">
+                    <h1 style="font-size: 20px;">Why Us</h1>
+                    <ul>
+                        <li>Tutorials by industry experts</li>
+                        <li>Peer and expert code review</li>
+                        <li>Coding exercises</li>
+                        <li>Access to our GitHub repos</li>
+                        <li>Community forum</li>
+                        <li>Flashcard desks</li>
+                        <li>New videos every week</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
